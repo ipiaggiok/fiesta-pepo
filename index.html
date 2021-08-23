@@ -4,14 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pepo´s Fest</title>
+    <title>Pepo Fest</title>
+    <link rel="preload" href="./css/style.css" as="style">
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <!--Div Conteiner 2-->
-    <div class="container">
-        <div class="row">
-            <p>Prueba de actualizado en git 2.0 posta</p>
-        </div>
-    </div>
+    <header>
+        <h1 class="titulo">PEPO FEST</h1>
+    </header>    
+
+    <main>
+        <h2 class="check">Checkeá si estas en lista</h2>
+        <a class="continuar" href="#">Continuar</a>
+    </main>
+
+    <form>
+        <fieldset>    
+            <legend>Si creés que hay un error, envianos un mensaje</legend>
+                <div>
+                    <label>Nombre</label>
+                    <input type="text" placeholder="nombre">
+                </div>
+
+                <div>
+                    <label>Apellido</label>
+                    <input type="text" placeholder="apellido">
+                </div>    
+
+                <div>
+                    <label>Celular</label>
+                    <input type="tel" placeholder="Celular">
+                </div>    
+
+                <div>
+                    <label>Mensaje</label>
+                    <textarea></textarea>
+                </div>    
+                    
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>    
+                    
+        </fieldset>    
+    </form>
+     
+    <footer>
+        <h3>Turbias Soluciones S.A.</h3>
+    </footer>
 </body>
 </html>
