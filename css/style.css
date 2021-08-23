@@ -11,20 +11,39 @@ body {
 }
 
 .titulo{
+    font-size: 2rem;
     text-align: center;
     color: rgba(36, 36, 167, 0.733);
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-style: italic;
+}
+
+.formulario{
     font-family: 'Rubik';
 }
 
 .check{
     text-align: center;
+    font-family: 'Rubik';
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .continuar{
     text-align: center;
-    padding: 48%;
+    font-family: 'Rubik';
 }
+
+
 
 h3{
     text-align: center;
+    font-family: 'Rubik';
+}
+
+.footer{
+    color: rgb(255, 255, 255);
+    background: black;
+    height: 30px;
 }

@@ -10,6 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="preload" href="./css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
@@ -18,11 +23,16 @@
     </header>    
 
     <main>
-        <h2 class="check">Checkeá si estas en lista</h2>
-        <a class="continuar" href="#">Continuar</a>
+        <div class="check">
+            <h2>Checkeá si estas en lista</h2>
+            <input class="check" type="tel" placeholder="Ingresá tu DNI" required>
+            <br>
+            <br>
+            <button href="#" type="submit">Continuar</button>
+        </div>        
     </main>
 
-    <form>
+    <form class="formulario">
         <fieldset>    
             <legend>Si creés que hay un error, envianos un mensaje</legend>
                 <div>
@@ -52,8 +62,9 @@
         </fieldset>    
     </form>
      
-    <footer>
+    <footer class="footer">
         <h3>Turbias Soluciones S.A.</h3>
     </footer>
+
 </body>
 </html>
