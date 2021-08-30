@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pepo Fest</title>
     <link rel="preload" href="./css/style.css" as="style">
     <link href="./css/style.css" rel="stylesheet">
@@ -15,9 +15,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
     <link rel="preload" href="./css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+
 </head>
 
 <body>
+    
     <header>
         <h1 class="titulo">PEPO FEST</h1>
     </header>    
@@ -28,39 +33,84 @@
             <input class="check" type="tel" placeholder="Ingresá tu DNI" required>
             <br>
             <br>
-            <button href="#" type="submit">Continuar</button>
+            <div class="button btn-sm btn-success " >
+                <button href="#" type="submit" >Continuar</button>
+            </div>
         </div>        
     </main>
 
-    <form class="formulario">
+<div class="col-md-6 mt-3  mb-3 mx-auto">
+    <div class="card" style="width: auto; margin: auto auto;">
+        <div class="card-body">
+            <h3><b> Completa Con Tus Datos</b></h3>
+            <hr>
+
+            <form >
+                <div class="md-form">
+                    <i class="fas fa-user prefix black-text"></i>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" class="form-control" required>
+                </div>
+                <div class="md-form">
+                    <i class="fas fa-user prefix black-text"></i>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" class="form-control" required>
+                </div>
+                <div class="md-form">
+                   <i class="fas fa-mobile-alt prefix"></i>
+                   <label for="telefono">Telefono:</label>
+                   <input type="tel" id="telefono" class="form-control" required >
+                
+                </div>
+                <div class="md-form">
+                    <label for="texto"> Mensaje:</label>
+                   
+                    <textarea id="texto" class="md-textarea " ></textarea>
+                    
+                </div>
+                <div class="text-center">
+                    <div class="button btn-sm btn-success ">Enviar</div>
+                </div>
+
+
+            </form>
+
+        </div>
+    </div>
+
+</div>
+    <!-- <form class="formulario">
         <fieldset>    
             <legend>Si creés que hay un error, envianos un mensaje</legend>
-                <div class=campo >
+            <div class=container>
+                <div class=campos >
                     <label>Nombre</label>
                     <input type="text" placeholder="nombre">
                 </div>
 
-                <div class=campo>
+                <div class=campos>
                     <label>Apellido</label>
                     <input type="text" placeholder="apellido">
                 </div>    
 
-                <div class=formulario>
+                <div class=campos>
                     <label>Celular</label>
                     <input type="tel" placeholder="Celular">
                 </div>    
 
-                <div class=formulario>
+                <div class=campos>
                     <label>Mensaje</label>
                     <textarea></textarea>
-                </div class=formulario>    
+                </div class=campos>    
                     
-                <div class=formulario>
+                <div class=campos>
                     <input type="submit" value="Enviar">
-                </div class=formulario>    
+                </div class=campos>    
                     
-        </fieldset>    
-    </form>
+       
+            </div>
+                 </fieldset>    
+    </form> -->
      
     <footer class="footer">
         <h3>Turbias Soluciones S.A.</h3>
