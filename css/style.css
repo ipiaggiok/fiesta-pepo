@@ -1,19 +1,36 @@
-/*#principal {
-    background-image: url(../img/dique.jpg) no-repeat center center fixed;
-    background-size: cover;
-}*/
-
 html {
-    font-size: 62.5px;
-}
-body {
-    font-size: 16px;
+    height: 100%;
+    
 }
 
-.titulo{
-    font-size: 2rem;
+body {
+    background-image: url(/img/dique.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 100%;
+}
+
+#hero-container {
     text-align: center;
-    color: rgba(36, 36, 167, 0.733);
+}
+
+#hero-background {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    width: 0;
+    height: 100%;
+    transition: 800ms ease-in-out;
+    margin-top: 0px;
+    z-index: -1;
+}
+
+#titulo{
+    padding-top: 2rem;
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.85);
     font-family: 'Rubik';
     font-weight: 700;
     font-style: italic;
@@ -23,7 +40,9 @@ body {
     font-family: 'Rubik';
 }
 
-.check{
+#check {
+    padding-top: 5rem;
+    color: rgb(255, 255, 255);
     text-align: center;
     font-family: 'Rubik';
     margin-left: auto;
@@ -36,14 +55,21 @@ body {
 }
 
 
-
 h3{
     text-align: center;
     font-family: 'Rubik';
+    font-weight: 300;
+    font-size: 20px;
+ }
+
+.position-fixed{
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0, 0.733);
+    width: 100%;
 }
 
-.footer{
-    color: rgb(255, 255, 255);
-    background: black;
-    height: 30px;
+.md-textarea{
+    height: 100px;
+    width: 100%;
 }
+
